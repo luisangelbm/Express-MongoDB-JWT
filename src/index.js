@@ -10,6 +10,6 @@ const PORT = process.env.PORT || 5000;
 app.use(express.json())
 
 // routes
-app.use("/api/v1", authRoute);
+app.use("/api/v1/auth", authRoute);
 
 app.listen(PORT, () => console.log(`http://localhost:${PORT}`));
